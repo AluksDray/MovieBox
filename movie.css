@@ -1,0 +1,798 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+body{
+    background-color: black;
+    width: 100%;
+    height: 100vh;
+    /* margin: 2rem auto; */
+    color: #ffffff;
+    position: relative;
+}
+
+.main-container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+}
+
+.modal{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(69, 65, 65, 0.12);
+    color: #000000;
+    position: absolute;
+    align-items: center;
+    top: 0rem;
+    left: 0rem;
+    visibility: hidden;
+}
+
+.form-close{
+    width: 25%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 11rem auto;
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    row-gap: 0.4rem;
+}
+
+.cta{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.logout-con{
+    width: fit-content;
+    height: auto;
+    padding: 0.2rem;
+    background-color: #4C8E97;
+    border: none;
+    outline: none;
+    border-radius: 0.2rem;
+    cursor: pointer;
+    color: #D9D9D9;
+}
+.logout-con:hover{
+    background-color: #15C9E1;
+    cursor: pointer;
+    color: #000000;
+}
+
+.logout-can{
+    width: fit-content;
+    height: auto;
+    padding: 0.2rem;
+    background-color: rgb(236, 93, 93);
+    border: none;
+    outline: none;
+    border-radius: 0.2rem;
+    cursor: pointer;
+    color: #D9D9D9;
+}
+.logout-can:hover{
+    background-color: red;
+    cursor: pointer;
+    color: #000000;
+}
+
+/* SIDE NAV-BAR */
+.first-main{
+    width: 25%;
+    height: auto;
+    padding: 1.5rem 1.6rem;
+    /* background-color: darkgray; */
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    row-gap: 3.5rem;
+    border-right: 0.5px solid #5d5c5c;
+}
+
+.logo-cont img{
+    width: 180px;
+}
+
+/* side nav bar child 2 */
+.menu-socials-general{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+}
+
+.menu-socials{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+}
+
+.menu{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.5rem;
+}
+
+.menu-title h4{
+    width: fit-content;
+    height: auto;
+    color: #6B696D;
+}
+
+.menu-navs{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.1rem;
+}
+
+.menu-navs a{
+    width: 100%;
+    height: auto;
+    text-decoration: none;
+    color: #D9D9D9;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 0.2rem;
+    text-align: center;
+    padding: 0.3rem;
+    border-radius: 0.5rem;
+    transition: background-color 0.3s ease;
+}
+
+.menu-navs a:hover{
+    background-color: #4C8E97;
+}
+
+.menu-navs a:active{
+    background-color: #15C9E1;
+}
+
+.socials{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.5rem;
+}
+
+.social-title h4{
+    width: fit-content;
+    height: auto;
+    color: #6B696D;
+}
+
+.general{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.5rem;
+}
+
+.general-title h4{
+    width: fit-content;
+    height: auto;
+    color: #6B696D;
+}
+
+.pre-cont{
+    width: 260px;
+    height: 150px;
+    padding: 2rem 1rem 1rem 1rem;
+    background-color: #15C9E1;
+    border-radius: 1.4rem;
+    position: relative;
+}
+
+.pre-cont h4{
+    width: 80%;
+    padding: 0.4rem 0.6rem;
+    border-radius: 0.4rem;
+    background-color: #4C8E97;
+    position: absolute;
+    top: 6rem;
+    left: 1.5rem;
+    text-align: center;
+    cursor: pointer;
+}
+
+
+/* Movie side container */
+.second-main{
+    width: 75%;
+    height: auto;
+    padding: 1.5rem 1.6rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+}
+
+.search-profile-cont{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.back{
+    color: #A7A2A2;
+    visibility: hidden;
+    cursor: pointer;
+}
+
+.back-arrow{
+    color: #A7A2A2;
+    visibility: visible;
+    cursor: pointer;
+}
+
+.search{
+    width: fit-content;
+    height: auto;
+    border: 1px solid rgba(217, 217, 217, 0.68);
+    /* background-color: #000000; */
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 0.2rem;
+}
+
+.search i{
+    color: #D9D9D9A6;
+}
+
+.search input{
+    width: 500px;
+    background-color: black;
+    border: none;
+    outline: none;
+    color: #D9D9D999;
+    font-size: 1rem;
+}
+
+.btn{
+    padding: 0.2rem 1rem;
+    font-weight: medium;
+    font-size: 1rem;
+    background-color: #4C8E97;
+    border: none;
+    outline: none;
+    border-radius: 0.2rem;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: #15C9E1;
+    outline: none;
+    border: none;
+    padding: 0.2rem 1rem;
+    border-radius: 0.2rem;
+    color: #000000;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.profile-notificatn{
+    display: flex;
+    flex-direction: row;
+    column-gap: 1rem;
+    justify-content: start;
+    align-items: center;
+}
+
+.profile-notificatn img{
+    width: 45px;
+    height: 48px;
+    border-radius: 0.6rem;
+    border: 1px solid #D9D9D9;
+    cursor: pointer;
+}
+
+.profile-notificatn i{
+    cursor: pointer;
+}
+
+.profile-notificatn i:hover{
+    color: #4C8E97;
+}
+
+/*Movies container(second container) */
+.movie-container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    visibility: visible;
+}
+
+.movie-category{
+    width: 100%;
+    height: auto;
+}
+
+.movie-category-label{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.5rem;
+}
+/* 
+.movie-label{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+} */
+
+.list{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    column-gap: 0.6rem;
+}
+
+.list li a{
+    text-decoration: none;
+    color: #6B696D;
+}
+
+.list li a:hover{
+    color: #4C8E97;
+    text-decoration: underline;
+}
+
+.list li a:active{
+    color: #15C9E1;
+    text-decoration: underline;
+}
+
+.movie-img-details{
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+.movie-img{
+    width: 100;
+    height: 300px;
+    background-image: url(./images/24-on-netflix.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 1rem;
+}
+
+.movie-details{
+    position: absolute;
+    top: 11rem;
+    left: 2rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.2rem;
+    padding: 0.3rem;
+    background-color: rgba(206, 239, 246, 0.5);
+    color: #000000;
+    border-radius: 0.4rem;
+}
+
+.movie-details h3{
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+.details{
+    width: fit-content;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    column-gap: 1rem;
+}
+
+.cta{
+    width: fit-content;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    column-gap: 0.4rem;
+}
+
+.cta p{
+    width: fit-content;
+    height: auto;
+    padding: 0.3rem 0.5rem;
+    background-color: #F70707;
+    color: #D9D9D9;
+    border-radius: 0.3rem;
+    cursor: pointer;
+}
+
+.cta i{
+    width: fit-content;
+    height: auto;
+    padding: 0.4rem;
+    background-color: rgba(51, 50, 50, 0.2);
+    border: 1px solid #15C9E1;
+    border-radius: 0.3rem;
+    cursor: pointer;
+}
+
+.cta i:hover{
+    background-color: #15C9E1;
+}
+
+/* Actions section */
+.actors{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.5rem;
+}
+
+.actors h4{
+    color: #D9D9D9;
+}
+
+.actor-pictures{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    column-gap: 0.7rem;
+}
+
+/* FIRST ACTOR */
+.actor-one{
+    width: 25%;
+    height: auto;
+    position: relative;
+}
+
+.actor-img1{
+    width: 100%;
+    height: 250px;
+    background-image: url(./images/images.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 0.5rem;
+}
+
+.actor-details-icon{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 10rem;
+}
+
+.plus-sign{
+    position: absolute;
+    bottom: 11rem;
+    right: 1rem;
+    padding: 0.4rem;
+    background-color: rgba(51, 50, 50, 0.2);
+    border-radius: 0.3rem;
+    cursor: pointer;
+    width: fit-content;
+    height: auto;
+    padding: 0.6rem;
+    border: 1px solid #15C9E1;
+}
+
+.plus-sign:hover{
+    background-color: #15C9E1;
+}
+
+.actor-details{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.2rem;
+}
+
+.actor-details p{
+    color: #F5F5F5;
+}
+
+.actor-details i{
+    color: #FFCB22;
+}
+
+/* Actor 2 */
+.actor-img2{
+    width: 100%;
+    height: 250px;
+    background-image: url(./images/regina.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 0.5rem;
+}
+
+/* Actor 3 */
+.actor-img3{
+    width: 100%;
+    height: 250px;
+    background-image: url(./images/Omari_Hardwick_on_BTVR_\(cropped\).jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 0.5rem;
+}
+
+/* Actor 4 */
+.actor-img4{
+    width: 100%;
+    height: 250px;
+    background-image: url(./images/queen-latifah-1-89e1583c86d84f67a5ed4d8a049e2ff1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 0.5rem;
+}
+
+/* 3rd Container(Continue Watching) */
+.cont-watching{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.5rem;
+}
+
+.cont-watching h4{
+    color: #D9D9D9;
+}
+
+.cont-watcing-vid{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    column-gap: 0.8rem;
+    justify-content: space-evenly;
+}
+
+.cont-watching-vid1{
+    width: 32%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    position: relative;
+}
+
+.video1{
+    width: 100%;
+    height: 150px;
+    background-image: url(./images/breakthrough.jpg);
+    background-repeat: no-repeat;
+    cursor: pointer;
+    border-radius: 0.6rem;
+}
+
+.vid-played-length{
+    width: 40%;
+    height: 2px;
+    background-color: #F70707;
+}
+
+.vid-title{
+    width: 100%;
+    height: auto;
+    padding-top: 0.4rem;
+    padding-left: 0.4rem;
+    border-left: 1px solid #A7A2A2;
+    border-right: 1px solid #A7A2A2;
+    cursor: pointer;
+}
+
+/* Video 2 */
+.video2{
+    width: 100%;
+    height: 150px;
+    background-image: url(./images/king\ of\ boys.jpg);
+    background-repeat: no-repeat;
+    cursor: pointer;
+    border-radius: 0.6rem;
+}
+
+.vid-played-length2{
+    width: 75%;
+    height: 2px;
+    background-color: #F70707;
+}
+
+/* Video 3 */
+.video3{
+    width: 100%;
+    height: 150px;
+    background-image: url(./images/jumong.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+    border-radius: 0.6rem;
+}
+
+.vid-played-length3{
+    width: 60%;
+    height: 2px;
+    background-color: #F70707;
+}
+
+/* display search */
+.display-container{
+    width: 75%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-items: start;
+    row-gap: 1rem;
+}
+
+.display-poster img{
+    width: 400px;
+    height: 300px;
+    border-radius: 1rem;
+}
+
+.ratings-description{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.4rem;
+    font-size: large;
+    font-style: italic;
+}
+
+/* Log in form CSS */
+
+.log{
+    background-image: url(./images/depositphotos_150614902-stock-photo-unusual-cinema-concept-3d-illustration.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.log-in-page{
+    width: 30%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 2rem;
+    margin: 4rem auto;
+    padding: 2rem;
+    background-color: rgba(1, 27, 27, 0.5);
+    border-radius: 1rem;
+}
+
+.logo-greeting{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-greeting img{
+    width: 200px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-greeting h3{
+    width: fit-content;
+    height: auto;
+    font-size: 1.5rem;
+    color: #D9D9D9;
+}
+
+.signin-form{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    row-gap: 1.5rem;
+}
+
+.inp{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.2rem;
+}
+
+.inp label{
+    width: fit-content;
+    height: auto;
+}
+
+.inp input{
+    width: 100%;
+    height: auto;
+    padding: 0.3rem 0 0.3rem 0.4rem;
+    border-radius: 0.3rem;
+    outline: none;
+    border: none;
+}
+
+.login-btn-cont{
+    width: 100%;
+    height: auto;
+}
+
+.login-btn-cont button{
+    width: 100%;
+    height: auto;
+    padding: 0.4rem;
+    cursor: pointer;
+    background-color: #15C9E1;
+    border: none;
+    outline: none;
+    border-radius: 0.3rem;
+}
+
+.login-btn-cont button:hover{
+    cursor: pointer;
+    background-color: #4C8E97;
+}
+
+.forgot{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.forgot a{
+    color: purple;
+}
+
+.email-alert{
+    color: red;
+}
+
+.password-alert{
+    color: red;
+}

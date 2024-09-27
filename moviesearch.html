@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MovieBox Search Result</title>
+    <link rel="stylesheet" href="./movie.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="main-container" id="main-container">
+
+        <!-- logo and menu container -->
+        <div class="first-main" id="first-main">
+
+            <!-- LOGO -->
+            <div class="logo-cont" id="logo-cont">
+                <img src="./images/Logo.svg" alt="">
+            </div>
+            <!-- MENU SOCIAL GENERAL-->
+            <div class="menu-socials-general" id="menu-socials-general">
+                <!-- Menu and socials -->
+                <div class="menu-socials" id="menu-socials">
+
+                    <div class="menu" id="menu">
+                        <div class="menu-title" id="menu-title">
+                            <h4>Menu</h4>
+                        </div>
+                        <div class="menu-navs" id="menu-navs">
+                            <a href="#home" class="active"><i class="fas fa-home"></i> Home</a>
+                            <a href="#community" class="active"><i class="fa-solid fa-group-arrows-rotate"></i>Community</a>
+                            <a href="#Discovery" class="active"><i class="fa-brands fa-searchengin"></i></i>Discovery</a>
+                            <a href="#coming Soon" class="active"><i class="fa-solid fa-stopwatch-20"></i>Coming Soon</a>
+                        </div>
+                    </div>
+
+                    <div class="socials" id="socials">
+                        <div class="social-title" id="social-title">
+                            <h4>Socials</h4>
+                        </div>
+                        <div class="menu-navs" id="socials-navs">
+                            <a href="#friends" class="active"><i class="fa-solid fa-user-group"></i> Friends</a>
+                            <a href="#collections" class="active"><i class="fa-solid fa-folder-plus"></i>Collections</a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- General -->
+                <div class="general" id="general">
+                    <div class="general-title" id="social-title">
+                        <h4>General</h4>
+                    </div>
+
+                    <div class="menu-navs" id="gen-navs">
+                        <a href="#settings" class="active"><i class="fa-solid fa-gear"></i>Settings</a>
+                        <a href="#help" class="active"><i class="fa-solid fa-circle-info"></i>Help</a>
+                        <a href="#logOut" class="active" id="log-out"><i class="fa-solid fa-right-from-bracket"></i>Log Out</a>
+                    </div>
+                </div>
+            </div>
+            <!-- PREMIUM -->
+            <div class="premium" id="premium">
+                <div class="pre-cont">
+                    <h4>Premium</h4>
+                </div>
+            </div>
+        </div>
+
+        <!-- search and movie container -->
+        <div class="second-main" id="second-main">
+            <!-- search,profile and notification -->
+            <div class="search-profile-cont" id="search-profile-cont">
+                <!-- search container -->
+                 <div class="back" id="back">
+                    <i class="fa-solid fa-arrow-left back-arrow" id="back-arrow"></i>
+                 </div>
+                <form class="search" id="search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="search" name="search-input" id="search-input" placeholder="Search for Movie">
+                    <button class="btn" id="btn">Search</button>
+                </form>
+
+                <div class="profile-notificatn" id="profile-notificatn">
+                    <img src="./images/0549b119fc7f9a434b59d7ccca21110d.png" alt="">
+                    <i class="fa-solid fa-bell"></i>
+                </div>
+            </div>
+
+
+            <!-- Display Search -->
+            <div class="display-container" id="display-container">
+                <!-- <div class="display-poster" id="display-poster">
+                    <img src="./images/anikulapo..jpg" alt="">
+                </div>
+
+                <div class="ratings-description" id="ratings-description">
+                    <h2>Title</h2>
+
+                    <h4>Popularity</h4>
+
+                    <h4>Vote Average</h4>
+
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus voluptate voluptatem porro minus iste nihil excepturi, omnis animi repellendus esse, sint sed aliquid explicabo illo, repudiandae praesentium quisquam. Ut iste quia architecto blanditiis itaque dolorem suscipit animi veniam hic dolore!          
+                    </p>
+                </div> -->
+            </div>
+        </div>
+
+
+
+
+    </div>
+
+
+    <!-- Modal -->
+    <div class="modal" id="modal">
+        <div class="form-close" id="form-close">
+        <p>Are you sure you want to log out?</p>
+        <div class="cta" id="cta">
+            <button class="logout-con" id="logout-confirm">Confirm</button>
+            <button class="logout-can" id="logout-cancel">Cancel</button>
+        </div>
+        </div>
+    </div>
+
+
+    <script src="./moviesearch.js"></script>
+</body>
+</html>
