@@ -58,5 +58,6 @@ loginForm.addEventListener("submit", function(event){
         alert("Log in successful")
     }, 5000);
     
+    loginForm.reset()
     window.location.href = "movie.html"
 })
